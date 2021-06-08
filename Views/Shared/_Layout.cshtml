@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net 
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Il salone del Gusto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/Tema/assets/css/main.css" />
+		<style>
+			#nav{
+				background-image: none;
+				
+			}
+			.spazio{
+				margin-inline-end: 20px;
+				margin-inline-start: 20px;
+			}
+			.container3 {
+				margin-left: 40px;
+				margin-bottom: 6px;
+				width: 100%;
+				
+				max-width: 600px;
+				position: relative;
+			}
+			.container3 .image-stack::after {
+				content: ' ';
+				display: table;
+				clear: both;
+			}
+			.container3 .image-stack__item--top {
+				float: left;
+				width: 70%;
+				margin-right: -70%;
+				padding-top: 70%; // valore libero;
+				position: relative;
+				z-index: 1;
+			}
+			.container3 .image-stack__item--bottom {
+				
+				float: right;
+				width: 220px;
+				height: auto;
+			}
+			.container3 img {
+				width: 100%;
+			}
+			.button.scrolly{
+				scroll-behavior: smooth;
+			}
+			.navbar .dropdown-menu i {
+				font-size: 16px;
+				min-width: 22px;
+				
+			}
+			.navbar .dropdown.open > a {
+				background: none !important;
+				
+			}
+			.navbar .dropdown-menu {
+				border-radius: 1px;
+				border-color: #e5e5e5;
+				box-shadow: 0 2px 8px rgba(0,0,0,.05);
+				
+				
+			}
+			.navbar .dropdown-menu li a {
+				color: #777;
+				padding: 8px 20px;
+				line-height: normal;
+				
+			}
+			.navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:active {
+				color: #333;
+				
+			}	
+			.navbar .dropdown-menu .material-icons {
+				font-size: 21px;
+				line-height: 16px;
+				vertical-align: middle;
+				margin-top: -2px;
+				
+				
+			}
+			.nav img {
+				border-radius: 50%;
+				margin: -8px 0;
+				float: left;
+				
+			}
+
+		</style>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header 
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="index.html" id="logo">FIERA MILANO 2020/2021</a></h1><br>
+							<p><i>Il salone del gusto</i></p>
+						</div>
+					</div>
+				</header>-->
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+						<li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+						<li><a asp-area="" asp-controller="Home" asp-action="Tabelle">Tabelle</a></li>
+						<li><a asp-area="" asp-controller="Home" asp-action="Donazione">Dona</a></li>
+						
+						<li class="topnav-right">
+							<a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-fw fa-user"></i></a>
+							<ul>
+								<li><a asp-area="" asp-controller="Account" asp-action="Registra"><i class="fa fa-user-o"></i>Signin</a></li>
+								<li><a asp-area="" asp-controller="Account" asp-action="Login"><i class="fa fa-calendar-o"></i>Login</a></li>
+								
+								<li class="divider"></li>
+								<li><a href="#"><i class="material-icons"></i>Logout</a></li>
+							</ul>
+						</li>
+						
+						
+					</ul>
+				</nav>
+                
+			<!-- Banner -->
+                
+				<section id="banner">
+                    
+					<div class="content">
+                      
+                       <a href="#main" class="button scrolly cta" style="scroll-behavior: smooth;">
+                            <span>Visita la fiera!</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+							
+                        </a>
+					</div>
+				</section>
+                
+  
+			 <!--Main-->
+				<section id="main">
+					<div class="container">
+						<div class="row gtr-200">
+							<!--<div class="col-12">
+                                
+								 Highlight 
+									<section class="box highlight">
+										<ul class="special">
+											<li><a href="#" class="icon solid fa-search"><span class="label">Magnifier</span></a></li>
+											<li><a href="#" class="icon solid fa-tablet-alt"><span class="label">Tablet</span></a></li>
+											<li><a href="#" class="icon solid fa-flask"><span class="label">Flask</span></a></li>
+											<li><a href="#" class="icon solid fa-cog"><span class="label">Cog?</span></a></li>
+										</ul>
+										<header>
+											<h2>A random assortment of icons in circles</h2>
+											<p>And some text that attempts to explain their significance</p>
+										</header>
+										<p>
+											Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
+											ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis consequat.
+										</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+ -->
+								<!-- Features -->
+								
+								
+									<section class="box features">
+										<br>
+										<h2 class="major"><span>I vari stand...</span></h2>
+										<div>
+											<div class="row">
+												<div class="spazio col-2">
+
+													<!-- Feature -->
+														<section class="box feature">
+															
+															<div class="container3">
+																<div class="image-stack">
+																	<a asp-area="" asp-controller="Home" asp-action="Privacy" class="image featured">
+																		<div class="image-stack__item image-stack__item--top">
+																			<img src="/Tema/images/Stand1Logo.jpg">
+																		</div>
+																		<div class="image-stack__item image-stack__item--bottom">
+																			<img src="/Tema/images/Stand1.jpg">
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<h3 style="padding-left: 40px;"><a href="#">Stand 1</a></h3>
+															<p  style="padding-left: 40px; width: auto;">
+																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+															</p>
+															
+														</section>
+
+												</div>
+												<div class="spazio col-2">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<div class="container3">
+																<div class="image-stack">
+																	<a asp-area="" asp-controller="Home" asp-action="Privacy" class="image featured">
+																		<div class="image-stack__item image-stack__item--top" style="padding-top: 61%;">
+																			<img src="/Tema/images/Stand2Logo.jpg">
+																		</div>
+																		<div class="image-stack__item image-stack__item--bottom">
+																			<img src="/Tema/images/Stand2.jpg" height="190">
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<h3 style="padding-left: 40px;"><a href="#">Stand 2</a></h3>
+															<p style="padding-left: 40px;">
+																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+															</p>
+														</section>
+
+												</div>
+												<div class="spazio col-2">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<div class="container3">
+																<div class="image-stack">
+																	<a asp-area="" asp-controller="Home" asp-action="Privacy" class="image featured">
+																		<div class="image-stack__item image-stack__item--top" style="padding-top: 61%;">
+																			<img src="/Tema/images/Stand3Logo.png">
+																		</div>
+																		<div class="image-stack__item image-stack__item--bottom">
+																			<img src="/Tema/images/Stand3.jpg" height="190">
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<h3 style="padding-left: 40px;"><a href="#">Stand 3</a></h3>
+															<p style="padding-left: 40px;">
+																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+															</p>
+														</section>
+
+												</div>
+												<div class="spazio col-2">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<div class="container3">
+																<div class="image-stack">
+																	<a asp-area="" asp-controller="Home" asp-action="Privacy" class="image featured">
+																		<div class="image-stack__item image-stack__item--top" style="padding-top: 57%; width: 40%;">
+																			<img src="/Tema/images/Stand4Logo.png">
+																		</div>
+																		<div class="image-stack__item image-stack__item--bottom">
+																			<img src="/Tema/images/Stand4.jpg" height="190">
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<h3 style="padding-left: 40px;"><a href="#">Stand 4</a></h3>
+															<p style="padding-left: 40px;">
+																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+															</p>
+														</section>
+
+												</div>
+												<div class="spazio col-2">
+
+													<!-- Feature -->
+														<section class="box feature">
+															
+															<div class="container3">
+																<div class="image-stack">
+																	<a asp-area="" asp-controller="Home" asp-action="Privacy" class="image featured">
+																		<div class="image-stack__item image-stack__item--top" style="padding-top: 52%;">
+																			<img style="background-color: white;" src="/Tema/images/Stand5Logo.png">
+																		</div>
+																		<div class="image-stack__item image-stack__item--bottom">
+																			<img src="/Tema/images/Stand5.jpg" height="190">
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<h3 style="padding-left: 40px;"><a href="#">Stand 5</a></h3>
+															<p style="padding-left: 40px;">
+																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+															</p>
+														</section>
+
+												</div>
+												<div class="col-12">
+											<ul class="actions">
+												<li><a href="#" class="button large">Accedi</a></li>
+												<li><a href="#" class="button alt large">Registrati</a></li>
+											</ul>
+										</div>
+										
+											</div>
+										</div>
+									</section>
+
+							</div>
+								<!-- <div class="col-12">
+
+							 Blog 
+									<section class="box blog">
+										<h2 class="major"><span>Another Major Heading</span></h2>
+										<div>
+											<div class="row">
+												<div class="col-9 col-12-medium">
+													<div class="content">
+
+													 Featured Post
+															<article class="box post">
+																<header>
+																	<h3><a href="#">Here's a really big heading</a></h3>
+																	<p>With a smaller subtitle that attempts to elaborate</p>
+																	<ul class="meta">
+																		<li class="icon fa-clock">15 minutes ago</li>
+																		<li class="icon fa-comments"><a href="#">8</a></li>
+																	</ul>
+																</header>
+																<a href="#" class="image featured"><img src="Tema/images/pic05.jpg" alt="" /></a>
+																<p>
+																	Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in lectus. Praesent
+																	semper mod quis eget mi. Etiam sed ante risus aliquam erat et volutpat. Praesent a
+																	dapibus velit. Curabitur sed nisi nunc, accumsan vestibulum lectus. Lorem ipsum
+																	dolor sit non aliquet sed, tempor et dolor. Praesent a dapibus velit. Curabitur
+																	accumsan.
+																</p>
+																<a href="#" class="button">Continue Reading</a>
+															</article>
+
+													</div>
+												</div>
+												<div class="col-3 col-12-medium">
+													<div class="sidebar">
+
+													 Archives 
+															<ul class="divided">
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">A Subheading</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock">6 hours ago</li>
+																			<li class="icon fa-comments"><a href="#">34</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">Another Subheading</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock">9 hours ago</li>
+																			<li class="icon fa-comments"><a href="#">27</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And Another</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock">Yesterday</li>
+																			<li class="icon fa-comments"><a href="#">184</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And Another</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock">2 days ago</li>
+																			<li class="icon fa-comments"><a href="#">286</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And One More</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock">3 days ago</li>
+																			<li class="icon fa-comments"><a href="#">8,086</a></li>
+																		</ul>
+																	</article>
+																</li>
+															</ul>
+															<a href="#" class="button alt">Archives</a>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div> -->
+						</div>
+					</div>
+				</section>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>What's this about?</span></h2>
+										<p>
+											This is <strong>TXT</strong>, yet another free responsive site template designed by
+											<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
+											<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
+											whatever you're working on (personal or commercial), just be sure to give us credit for the design.
+											That's basically it :)
+										</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section>
+										<h2 class="major"><span>Get in touch</span></h2>
+										<ul class="contact">
+											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+
+							</div>
+						</div>
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li><img src="/Tema/images/logo.png" width="230" height="60"></li><li>Giorgia Montanari</li>
+									<!--<li>&copy; Montanari Giorgia 5H ITTS Rimini</li><li><a asp-area="" asp-controller="Home" asp-action="Privacy">PRIVACY</a></li>-->
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/Tema/assets/js/jquery.min.js"></script>
+			<script src="/Tema/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/Tema/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/Tema/assets/js/browser.min.js"></script>
+			<script src="/Tema/assets/js/breakpoints.min.js"></script>
+			<script src="/Tema/assets/js/util.js"></script>
+			<script src="/Tema/assets/js/main.js"></script>
+
+	</body>
+</html>

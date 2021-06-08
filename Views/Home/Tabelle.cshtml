@@ -1,0 +1,31 @@
+@using SalonedelGusto
+@using SalonedelGusto.Models
+@model SalonedelGusto.Models.Visitatore
+@{
+    ViewData["Title"] = "Tabella";
+}
+
+<div class="text-center">
+    <div class="form-group">
+        <form class="m-2" method="post">
+            <label asp-for="CodCoupon">Codice coupon:</label>
+            <input asp-for="CodCoupon" class="form-control"></input>
+            <!--<select id="Prodotto" asp-for="Prodotto" onchange="cambiaSelect(this.value)">
+                <option selected="selected">Prodotto provato:</option>
+                <option value="Miele">Miele</option>
+                <option value="Api">Api</option>
+                <option value="Collagene">Collagene</option>
+            </select>-->
+        </form>
+        <button type="submit" class="btn btn-primary">Inserisci</button>
+    </div>
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr><th>Codice</th><th>Nome</th><th>Cognome</th><th>Prodotto</th></tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+
+    </table>
+</div>
