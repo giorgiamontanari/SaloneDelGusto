@@ -1,8 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<style>
+    .button.scrolly{
+		scroll-behavior: smooth;
+	}
+</style>
+@section banner {
+<section id="banner">
+                    
+	<div class="content">
+                      
+        <a href="#main" class="button scrolly cta" style="scroll-behavior: smooth;">
+        <span>Visita la fiera!</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+							
+        </a>
+	</div>
+</section>}

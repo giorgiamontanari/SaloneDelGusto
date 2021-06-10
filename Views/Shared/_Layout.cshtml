@@ -132,21 +132,9 @@
                 
 			<!-- Banner -->
                 
-				<section id="banner">
-                    
-					<div class="content">
-                      
-                       <a href="#main" class="button scrolly cta" style="scroll-behavior: smooth;">
-                            <span>Visita la fiera!</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-							
-                        </a>
-					</div>
-				</section>
-                
+				
+                @RenderBody()
+				@RenderSection("banner", required: false)
   
 			 <!--Main-->
 				<section id="main">
@@ -177,6 +165,9 @@
  -->
 								<!-- Features -->
 								
+									
+								
+        				
 								
 									<section class="box features">
 										<br>
@@ -200,11 +191,8 @@
 																	</a>
 																</div>
 															</div>
-															<h3 style="padding-left: 40px;"><a href="#">Stand 1</a></h3>
-															<p  style="padding-left: 40px; width: auto;">
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
+															<h3 style="padding-left: 5px;"><a asp-area="" asp-controller="Home" asp-action="Stands">CONSORZIO DEL FORMAGGIO PARMIGIANO REGGIANO </a></h3>
+															
 															
 														</section>
 
@@ -226,10 +214,7 @@
 																</div>
 															</div>
 															<h3 style="padding-left: 40px;"><a href="#">Stand 2</a></h3>
-															<p style="padding-left: 40px;">
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
+															
 														</section>
 
 												</div>
@@ -250,10 +235,7 @@
 																</div>
 															</div>
 															<h3 style="padding-left: 40px;"><a href="#">Stand 3</a></h3>
-															<p style="padding-left: 40px;">
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
+															
 														</section>
 
 												</div>
@@ -274,10 +256,7 @@
 																</div>
 															</div>
 															<h3 style="padding-left: 40px;"><a href="#">Stand 4</a></h3>
-															<p style="padding-left: 40px;">
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
+															
 														</section>
 
 												</div>
@@ -299,19 +278,13 @@
 																</div>
 															</div>
 															<h3 style="padding-left: 40px;"><a href="#">Stand 5</a></h3>
-															<p style="padding-left: 40px;">
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
+															
 														</section>
 
 												</div>
-												<div class="col-12">
-											<ul class="actions">
-												<li><a href="#" class="button large">Accedi</a></li>
-												<li><a href="#" class="button alt large">Registrati</a></li>
-											</ul>
-										</div>
+												
+											
+										
 										
 											</div>
 										</div>
@@ -414,11 +387,7 @@
 						</div>
 					</div>
 				</section>
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
+        
 			<!-- Footer -->
 				<footer id="footer">
 					<div class="container">

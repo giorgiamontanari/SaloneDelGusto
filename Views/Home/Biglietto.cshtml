@@ -1,0 +1,38 @@
+@model SalonedelGusto.Models.Visitatore
+@using SalonedelGusto.Models
+
+@{
+    ViewData["Title"] = "Biglietto";
+}
+<html>
+    <head>
+        <style>
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        max-width: 1500px;
+        max-height: auto;
+        margin: auto;
+        text-align: left;
+        font-family: arial;
+        
+        }
+        
+
+        </style>
+    </head>
+    <body>
+
+        <h2 style="text-align:center">Il tuo biglietto</h2>
+
+        <div class="card">
+            <div style="float:left;margin: 20px">
+                <img src="/Tema/images/salone2.png" height="200px" width="350px" style="float:left;margin: 10px"/>
+            </div>
+            <br>
+            
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.<br> Lorem jeamsun denim lorem jeansum. <br>Lorem jeamsun denim lorem jeansum.</p>
+            
+        </div>
+    </body>
+</html>

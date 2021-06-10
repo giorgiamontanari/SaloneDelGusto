@@ -22,11 +22,11 @@ namespace SalonedelGusto.Models
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Espositore> Espositore { get ; set; }
-        public DbSet<Azienda> Azienda { get ; set; }
-        public DbSet<Prodotto> Prodotto { get ; set; }
-        public DbSet<Stand> Stand { get ; set; }
-        public DbSet<Visitatore> Visitatore { get ; set; }
+        public DbSet<Espositore> Espositori { get ; set; }
+        public DbSet<Azienda> Aziende { get ; set; }
+        public DbSet<Prodotto> Prodotti { get ; set; }
+        public DbSet<Stand> Stands { get ; set; }
+        public DbSet<Visitatore> Visitatori { get ; set; }
        
     }
 }

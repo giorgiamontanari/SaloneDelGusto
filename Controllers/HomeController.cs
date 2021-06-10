@@ -33,6 +33,12 @@ namespace SalonedelGusto.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Biglietto()
+        {
+            return View();
+        }
+      
         public IActionResult Donazione()
         {
             return View();

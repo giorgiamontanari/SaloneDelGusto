@@ -38,7 +38,7 @@ namespace SalonedelGusto.Controllers
             if (ModelState.IsValid)
             {
                var result = await _signInManager.PasswordSignInAsync(user.Email,user.Password, user.RememberMe, false);
-
+                
                 if (result.Succeeded)
                 {
                    // Se l'utente fa login correttamente, entra.
@@ -54,8 +54,10 @@ namespace SalonedelGusto.Controllers
             }
             return View(user); 
         }
+        [HttpGet]
         public IActionResult Registra()
         {
+            
             return View();
             //return View("_Registrati");
             //return View();
@@ -64,6 +66,7 @@ namespace SalonedelGusto.Controllers
         [HttpPost]
         public async Task<IActionResult> Registra(RegistraDto model)
         {
+           
             if (ModelState.IsValid)
             {
                 var user = new IdentityUser
@@ -73,6 +76,8 @@ namespace SalonedelGusto.Controllers
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
+                
+               
 
                 if (result.Succeeded)
                 {
@@ -85,6 +90,8 @@ namespace SalonedelGusto.Controllers
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
             }
+           
+           
             return View(model);
         }
         public async Task<IActionResult> Logout()
