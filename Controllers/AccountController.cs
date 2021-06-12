@@ -81,7 +81,8 @@ namespace SalonedelGusto.Controllers
 
                 if (result.Succeeded)
                 {
-                    //await _signInManager.SignInAsync(user, isPersistent: false);
+                    //IdentityUser utente= await _userManager.FindByEmailAsync(user.Email);
+                    //await _userManager.AddToRoleAsync(utente, "Ristorante"(nome ruolo)); per il ruolo
                     return RedirectToAction("Index", "Home");
                 }
 

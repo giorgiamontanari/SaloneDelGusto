@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace SalonedelGusto.Controllers
 {
     [Authorize]
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -38,16 +39,17 @@ namespace SalonedelGusto.Controllers
         {
             return View();
         }
-      
+       
         public IActionResult Donazione()
         {
             return View();
         }
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Amministratore")]
         public IActionResult Tabelle()
         {
             return View();
         }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

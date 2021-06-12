@@ -20,6 +20,7 @@ namespace SalonedelGusto.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new Roles());
         }
 
         public DbSet<Espositore> Espositori { get ; set; }
